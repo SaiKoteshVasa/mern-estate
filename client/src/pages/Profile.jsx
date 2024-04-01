@@ -3,7 +3,7 @@ import { useRef, useState, useEffect } from 'react';
 import { getDownloadURL, getStorage, ref, uploadBytesResumable} from 'firebase/storage';
 import { app } from '../firebase';
 import { updateUserStart, updateUserSuccess,updateUserFailure,
-         deleteUserFailure, deleteUserStart, deleteUserSuccess, signOutUserStart 
+         deleteUserFailure, deleteUserStart, deleteUserSuccess, signOutUserStart,
         } from '../redux/user/userSlice';
 import { useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
@@ -228,8 +228,8 @@ export default function Profile() {
           Create Listing
         </Link>
       </form>
-      <div onClick={handleDeletUser} className="flex justify-between mt-5">
-        <span className="text-red-700 cursor-pointer">Delete account</span>
+      <div  className="flex justify-between mt-5">
+        <span onClick={handleDeletUser} className="text-red-700 cursor-pointer">Delete account</span>
         <span onClick={handleSignOut} className="text-red-700 cursor-pointer">
           Sign out
         </span>
