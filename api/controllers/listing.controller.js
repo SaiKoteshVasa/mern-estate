@@ -8,7 +8,6 @@ export const createListing = async (req, res, next) => {
     } catch (error) {
       next(error);
     }
-<<<<<<< HEAD
   };
 
   export const deleteListing = async (req, res, next) => {
@@ -61,6 +60,5 @@ export const createListing = async (req, res, next) => {
     } catch (error) {
       next(error);
     }
-=======
->>>>>>> parent of 4c33dbe (complete user listing functionality)
+    
   };
