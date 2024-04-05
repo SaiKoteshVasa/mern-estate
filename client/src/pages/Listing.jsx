@@ -10,10 +10,16 @@ import {
     FaBath,
     FaBed,
     FaChair,
+    FaDoorClosed,
+    FaDoorOpen,
     FaMapMarkedAlt,
     FaMapMarkerAlt,
     FaParking,
+    FaRestroom,
     FaShare,
+    FaSquareFull,
+    FaSquareRootAlt,
+    FaToilet,
   } from 'react-icons/fa';
 import Contact from '../components/Contact';
   
@@ -117,10 +123,10 @@ export default function Listing() {
             </p>
             <ul className='text-green-800 font-semibold text-sm flex flex-wrap items-center gap-4 sm:gap-6'>
               <li className='flex items-center gap-1 whitespace-nowrap '>
-                <FaBed className='text-lg' />
+                <FaDoorOpen className='text-lg' />
                 {listing.bedrooms > 1
-                  ? `${listing.bedrooms} beds `
-                  : `${listing.bedrooms} bed `}
+                  ? `${listing.bedrooms} rooms `
+                  : `${listing.bedrooms} room `}
               </li>
               <li className='flex items-center gap-1 whitespace-nowrap '>
                 <FaBath className='text-lg' />
